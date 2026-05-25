@@ -4,7 +4,7 @@ export default function Footer(){
     return (
         <footer>
             <div className="footer-container">
-                <p>© 2025 Bradley Eugene Sakran</p>
+                <p>© 2026 Bradley Eugene Sakran</p>
                 <ul className="links">
                     <li>
                         <a href="https://github.com/bradeu">
