@@ -88,7 +88,7 @@ export default function HomePage() {
                         <Button
                             size="lg"
                             className="home-btn-primary"
-                            onClick={() => scrollToSection('contact')}
+                            onPress={() => scrollToSection('contact')}
                         >
                             Get in Touch
                         </Button>
@@ -96,7 +96,7 @@ export default function HomePage() {
                             size="lg"
                             variant="bordered"
                             className="home-btn-secondary"
-                            onClick={handleViewResume}
+                            onPress={handleViewResume}
                         >
                             View Resume
                         </Button>
