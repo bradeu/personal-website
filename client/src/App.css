@@ -743,7 +743,7 @@ html {
   width: 340px;
   height: 420px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   border-radius: 14px;
   display: block;
   box-shadow:
