@@ -74,7 +74,7 @@ export default React.memo(function NavigationBar() {
         <Avatar showFallback isBordered color="primary" src={profileImage} size="md" />
       </div>
       <NavbarBrand className="hidden sm:flex">
-        <p className="font-bold text-inherit">Bradley Eugene Sakran</p>
+        <p className="nav-brand-serif">Bradley Eugene Sakran</p>
       </NavbarBrand>
       <NavbarContent className="flex gap-4 max-sm:hidden" justify="center">
         <NavbarItem
