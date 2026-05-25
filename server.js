@@ -6,16 +6,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const app = express();
 const port = 3000;
 
-// Serve static assets from the client/public directory
-app.use('/assets', express.static(join(__dirname, 'client/public/assets')));
+app.use(express.static(join(__dirname, 'client/dist')));
 
 // API routes would go here (if you have any)
 // app.use('/api', apiRouter);
 
-// Catch-all route: serve index.html for all routes
-// This allows React Router to handle client-side routing
 app.get('*', (req, res) => {
-    res.sendFile(join(__dirname, 'client/public/index.html'));
+    res.sendFile(join(__dirname, 'client/dist/index.html'));
 });
 
 app.listen(port, () => {
