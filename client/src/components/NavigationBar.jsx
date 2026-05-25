@@ -53,7 +53,7 @@ export default React.memo(function NavigationBar() {
       <div className="sm:hidden">
         <Dropdown backdrop="blur">
           <DropdownTrigger>
-            <Avatar showFallback isBordered color="primary" src={profileImage} size="md" className="cursor-pointer" />
+            <Avatar showFallback isBordered color="primary" src={profileImage} size="md" className="cursor-pointer" imgProps={{ style: { objectPosition: 'center 85%' } }} />
           </DropdownTrigger>
           <DropdownMenu aria-label="Navigation">
             <DropdownItem key="home" onClick={() => scrollToSection("home")}>
@@ -71,10 +71,10 @@ export default React.memo(function NavigationBar() {
 
       {/* Desktop: Regular avatar and name */}
       <div className="hidden sm:flex items-center gap-3">
-        <Avatar showFallback isBordered color="primary" src={profileImage} size="md" />
+        <Avatar showFallback isBordered color="primary" src={profileImage} size="md" imgProps={{ style: { objectPosition: 'center 85%' } }} />
       </div>
       <NavbarBrand className="hidden sm:flex">
-        <p className="font-bold text-inherit">Bradley Eugene Sakran</p>
+        <p className="nav-brand-serif">Bradley Eugene Sakran</p>
       </NavbarBrand>
       <NavbarContent className="flex gap-4 max-sm:hidden" justify="center">
         <NavbarItem
